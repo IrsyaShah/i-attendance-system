@@ -54,7 +54,7 @@ This demo shows how the whole system works including how to add students, scan f
 
 ## Data Visualization & Analytics
 
-The system integrates with **Microsoft Power BI** (located in the `powerbi-dashboard` folder) to visualize attendance and student data.
+The system integrates with **Microsoft Power BI** located in the `powerbi-dashboard` folder to visualize attendance and student data.
 - **Power BI Desktop**: Used to design and view comprehensive dashboards for student attendance reports, time logs and demographic charts.
 - **Power BI Mobile**: Fully supported for viewing interactive dashboards on mobile devices for on-the-go data tracking.
 ---
