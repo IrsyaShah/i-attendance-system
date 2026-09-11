@@ -106,7 +106,7 @@ The system integrates with **Microsoft Power BI** located in the `powerbi-dashbo
 
 ## Author
 
-### Team SYAGONA
+### Irsya Shah
 
 This project was designed and developed as a Final Year Project (FYP) for Saint International School by :
 - Muhammad Irsyaruddin Shah Bin Abdul Halim Shah
@@ -114,6 +114,6 @@ This project was designed and developed as a Final Year Project (FYP) for Saint 
 - Sneha Seenivasan
 - Tan Rhu Choon
 
-Software Developer
+Team SYAGONA
 
 LinkedIn : [Irsya Shah](https://www.linkedin.com/in/irsyashah/)
