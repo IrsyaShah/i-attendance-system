@@ -112,7 +112,7 @@ This project was designed and developed as a Final Year Project (FYP) for Saint 
 - Muhammad Irsyaruddin Shah Bin Abdul Halim Shah
 - Govinesh Sarma A/L Velayutam
 - Sneha Seenivasan
-- Tan Rhu Choon
+- Tan Rhu Choon (Supervisor)
 
 Team SYAGONA
 
