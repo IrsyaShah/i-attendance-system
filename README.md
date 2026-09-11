@@ -86,7 +86,7 @@ The system integrates with **Microsoft Power BI** (located in the `powerbi-dashb
 
 1. Clone the repository :
    ```bash
-   git clone [https://github.com/IrsyaShah/i-attendance-system.git](https://github.com/IrsyaShah/i-attendance-system.git)
+   git clone https://github.com/IrsyaShah/i-attendance-system.git
    ```
 
 2. Open the project solution file (`.sln`) in **Visual Studio**
