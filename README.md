@@ -4,11 +4,13 @@
 
 The I-Attendance System is a Windows desktop application that replaces manual student attendance with a **fingerprint scanner**. Built using **Visual Basic and SQL Server**, this system connects directly to the device to track attendance easily, securely and accurately.
 
+
+*(Note: The system design and documentation are protected under MyIPO copyright.)*
+
+
 The system supports two primary roles :
 - **Administrator**
 - **Teacher**
-
-*(Note: The system design and documentation are protected under MyIPO copyright.)*
 
 ---
 
