@@ -7,7 +7,6 @@ The I-Attendance System is a Windows desktop application that replaces manual st
 
 *(Note: The system design and documentation are protected under MyIPO copyright.)*
 
-
 The system supports two primary roles :
 - **Administrator**
 - **Teacher**
