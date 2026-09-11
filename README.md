@@ -1,11 +1,9 @@
 # I-Attendance System
 
-> **Intellectual Property Notice**
-> The comprehensive system design, workflow and accompanying official user manual for this project are registered and protected under copyright with the Intellectual Property Corporation of Malaysia (MyIPO). To protect proprietary assets, the full documentation is withheld from this public repository.
-
 ## Overview
 
-The I-Attendance System is a Windows desktop application that replaces manual student attendance with a fingerprint scanner. Built using Visual Basic and SQL Server, this system connects directly to the device to track attendance easily, securely and accurately.
+The I-Attendance System is a Windows desktop application that replaces manual student attendance with a **fingerprint scanner**. Built using **Visual Basic and SQL Server**, this system connects directly to the device to track attendance easily, securely and accurately.
+*(Note: The system design and documentation are protected under MyIPO copyright.)*
 
 The system supports two primary roles :
 - **Administrator**
