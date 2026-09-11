@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="report1" targetNamespace="http://tempuri.org/report1.xsd" xmlns:mstns="http://tempuri.org/report1.xsd" xmlns="http://tempuri.org/report1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="report1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="report1" msprop:Generator_UserDSName="report1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fingerclock" msprop:Generator_TableClassName="fingerclockDataTable" msprop:Generator_TableVarName="tablefingerclock" msprop:Generator_TablePropName="fingerclock" msprop:Generator_RowDeletingName="fingerclockRowDeleting" msprop:Generator_RowChangingName="fingerclockRowChanging" msprop:Generator_RowEvHandlerName="fingerclockRowChangeEventHandler" msprop:Generator_RowDeletedName="fingerclockRowDeleted" msprop:Generator_UserTableName="fingerclock" msprop:Generator_RowChangedName="fingerclockRowChanged" msprop:Generator_RowEvArgName="fingerclockRowChangeEvent" msprop:Generator_RowClassName="fingerclockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="namee" msprop:Generator_ColumnVarNameInTable="columnnamee" msprop:Generator_ColumnPropNameInRow="namee" msprop:Generator_ColumnPropNameInTable="nameeColumn" msprop:Generator_UserColumnName="namee" type="xs:string" />
+              <xs:element name="dept" msprop:Generator_ColumnVarNameInTable="columndept" msprop:Generator_ColumnPropNameInRow="dept" msprop:Generator_ColumnPropNameInTable="deptColumn" msprop:Generator_UserColumnName="dept" type="xs:string" minOccurs="0" />
+              <xs:element name="datee" msprop:Generator_ColumnVarNameInTable="columndatee" msprop:Generator_ColumnPropNameInRow="datee" msprop:Generator_ColumnPropNameInTable="dateeColumn" msprop:Generator_UserColumnName="datee" type="xs:string" minOccurs="0" />
+              <xs:element name="timein" msprop:Generator_ColumnVarNameInTable="columntimein" msprop:Generator_ColumnPropNameInRow="timein" msprop:Generator_ColumnPropNameInTable="timeinColumn" msprop:Generator_UserColumnName="timein" type="xs:string" minOccurs="0" />
+              <xs:element name="timeout" msprop:Generator_ColumnVarNameInTable="columntimeout" msprop:Generator_ColumnPropNameInRow="timeout" msprop:Generator_ColumnPropNameInTable="timeoutColumn" msprop:Generator_UserColumnName="timeout" type="xs:string" minOccurs="0" />
+              <xs:element name="duration" msprop:Generator_ColumnVarNameInTable="columnduration" msprop:Generator_ColumnPropNameInRow="duration" msprop:Generator_ColumnPropNameInTable="durationColumn" msprop:Generator_UserColumnName="duration" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="fingerclockKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:fingerclock" />
+      <xs:field xpath="mstns:namee" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

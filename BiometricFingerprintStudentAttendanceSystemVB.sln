@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BiometricFingerprintStudentAttendanceSystemVB", "BiometricFingerprintStudentAttendanceSystemVB\BiometricFingerprintStudentAttendanceSystemVB.vbproj", "{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}.Debug|x86.ActiveCfg = Debug|x86
+		{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}.Debug|x86.Build.0 = Debug|x86
+		{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}.Release|x86.ActiveCfg = Debug|x86
+		{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2B3EFF3-C61E-412A-9885-27752EFB0A84}
+	EndGlobalSection
+EndGlobal

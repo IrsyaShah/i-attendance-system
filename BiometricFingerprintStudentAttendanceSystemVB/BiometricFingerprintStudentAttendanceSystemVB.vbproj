@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{116DBFFC-EB5C-4F76-AAA7-C1C922AE0748}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BiometricFingerprintStudentAttendanceSystemVB.My.MyApplication</StartupObject>
+    <RootNamespace>BiometricFingerprintStudentAttendanceSystemVB</RootNamespace>
+    <AssemblyName>BiometricFingerprintStudentAttendanceSystemVB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\irsya\OneDrive\Desktop\APP\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>I-Attendance System</ProductName>
+    <PublisherName>AT-Company</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BiometricFingerprintStudentAttendanceSystemVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BiometricFingerprintStudentAttendanceSystemVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>61869871BEA384034F88149F2EC0825AA9E81790</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BiometricFingerprintStudentAttendanceSystemVB_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\DPFPDevNET\1.6.1.0__696774c42ee28c57\DPFPDevNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\DPFPGuiNET\1.6.1.0__d4f4a0bd9c559145\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\DPFPShrNET\1.6.1.0__d902fe275a8d6cf2\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\DPFPVerNET\1.6.1.0__4de0a9c4dcc83984\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\print_gate_pass\print_gate_pass\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminReg.Designer.vb">
+      <DependentUpon>AdminReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUser Profile.Designer.vb">
+      <DependentUpon>AdminUser Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppData.vb" />
+    <Compile Include="biometricdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biometricdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Add Class.Designer.vb">
+      <DependentUpon>Add Class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Class.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biometricdbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biometricdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.Designer.vb">
+      <DependentUpon>Change Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password2.Designer.vb">
+      <DependentUpon>Change Password2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.vb">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enroll.Designer.vb">
+      <DependentUpon>Enroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollmentForm.Designer.vb">
+      <DependentUpon>EnrollmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export Student Attendance.Designer.vb">
+      <DependentUpon>Export Student Attendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Export Student Attendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading Screen.Designer.vb">
+      <DependentUpon>Loading Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loading Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadingScreen.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recover Password.Designer.vb">
+      <DependentUpon>Recover Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recover Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select Class.Designer.vb">
+      <DependentUpon>Select Class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Select Class.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentProfile.Designer.vb">
+      <DependentUpon>StudentProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportStudent.Designer.vb">
+      <DependentUpon>ExportStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExportStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintAttendance.Designer.vb">
+      <DependentUpon>PrintAttendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintAttendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reports.Designer.vb">
+      <DependentUpon>reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentOut.Designer.vb">
+      <DependentUpon>StudentOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.vb">
+      <DependentUpon>Teacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentIn.Designer.vb">
+      <DependentUpon>StudentIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminReg.resx">
+      <DependentUpon>AdminReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUser Profile.resx">
+      <DependentUpon>AdminUser Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Class.resx">
+      <DependentUpon>Add Class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password2.resx">
+      <DependentUpon>Change Password2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInfoReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enroll.resx">
+      <DependentUpon>Enroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentForm.resx">
+      <DependentUpon>EnrollmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export Student Attendance.resx">
+      <DependentUpon>Export Student Attendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading Screen.resx">
+      <DependentUpon>Loading Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoadingScreen.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recover Password.resx">
+      <DependentUpon>Recover Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select Class.resx">
+      <DependentUpon>Select Class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentProfile.resx">
+      <DependentUpon>StudentProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportStudent.resx">
+      <DependentUpon>ExportStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintAttendance.resx">
+      <DependentUpon>PrintAttendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentOut.resx">
+      <DependentUpon>StudentOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentIn.resx">
+      <DependentUpon>StudentIn.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biometricdbDataSet.xsc">
+      <DependentUpon>biometricdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biometricdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biometricdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biometricdbDataSet.xss">
+      <DependentUpon>biometricdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biometricdbDataSet1.xsc">
+      <DependentUpon>biometricdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="biometricdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biometricdbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biometricdbDataSet1.xss">
+      <DependentUpon>biometricdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BiometricFingerprintStudentAttendanceSystemVB_TemporaryKey.pfx" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="report1.xsc">
+      <DependentUpon>report1.xsd</DependentUpon>
+    </None>
+    <None Include="report1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>report1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="report1.xss">
+      <DependentUpon>report1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_bnr_fp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_precise_recog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\punchclock-app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-symbol-transparent-background-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_mark_PNG66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21b6e9221d1b4cb5c62caa1a9b111c84-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21b6e9221d1b4cb5c62caa1a9b111c84-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dda52d7a57a74a94e182f4cf8898d2bf-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1f4a90d88164d1c8012fd08f009eafb-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cf6b14d2eea4c37dba8bc0ac12235a3-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fingerprint.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d0643f35b89165111c1db9d_fp-animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_key-removebg-preview.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\registration.png" />
+    <None Include="Resources\fingerprint_ver-removebg-preview.png" />
+    <None Include="Resources\fingerprint - Copy.png" />
+    <None Include="Resources\Apps bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EigenObjectRecognizer.cs" />
+    <Content Include="haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\bgAddClass.jpg" />
+    <None Include="Resources\istockphoto-1356837966-170667a.jpg" />
+    <None Include="Resources\bgclass.jpeg" />
+    <None Include="Resources\Untitled design.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\sainticon.ico" />
+    <None Include="Resources\HAtUQGn0nNi3INRZnXHlgYWnVo337m-removebg-preview.png" />
+    <None Include="Resources\try1.PNG" />
+    <None Include="Resources\trytry2.PNG" />
+    <None Include="Resources\try3.PNG" />
+    <None Include="Resources\try4.PNG" />
+    <None Include="Resources\11.PNG" />
+    <None Include="Resources\123.PNG" />
+    <None Include="Resources\1231.PNG" />
+    <None Include="Resources\baru.PNG" />
+    <None Include="Resources\buttonblkg.PNG" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\wallpaper login.jpg" />
+    <None Include="Resources\wallpaper.jpg" />
+    <None Include="Resources\wallpaper1.jpg" />
+    <None Include="Resources\addstudent.png" />
+    <None Include="Resources\adminicon.png" />
+    <None Include="Resources\Soft Green Minimalist Marketing Agency Poster.png" />
+    <None Include="Resources\20409735.jpg" />
+    <None Include="Resources\ezgif.com-gif-maker-removebg-preview.png" />
+    <None Include="Resources\Untitled_design-removebg-preview %281%29.png" />
+    <None Include="Resources\Untitled design %281%29.png" />
+    <None Include="Resources\Untitled_design__1_-removebg-preview.png" />
+    <None Include="Resources\4-removebg-preview.png" />
+    <None Include="Resources\5-removebg-preview.png" />
+    <None Include="Resources\5-removebg-preview1.png" />
+    <None Include="Resources\6-removebg-preview.png" />
+    <None Include="Resources\attendance.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\ezgif.com-gif-maker.png" />
+    <None Include="Resources\ezgif.com-gif-maker %281%29.png" />
+    <None Include="Resources\doorexit.png" />
+    <None Include="Resources\brunette-businesswoman-avatar-woman-face-profile-vector-21960675-removebg-preview.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\bgadmin.jpg" />
+    <None Include="Resources\regadmin.jpg" />
+    <None Include="Resources\regadmin.gif" />
+    <None Include="Resources\regadmin %282%29.gif" />
+    <None Include="Resources\user_data_illustration.gif" />
+    <None Include="Resources\animated_illustration_for_web.gif" />
+    <None Include="Resources\bgCreate.jpg" />
+    <None Include="Resources\student profile icon.png" />
+    <None Include="Resources\student profile icon1.png" />
+    <None Include="Resources\bgadmininfo.jpg" />
+    <None Include="Resources\grunge-paint-background.jpg" />
+    <None Include="Resources\v695-taus-03-abstractgradientbackground.jpg" />
+    <None Include="Resources\3506328.jpg" />
+    <None Include="Resources\dots.png" />
+    <None Include="Resources\bgloading.jpg" />
+    <None Include="Resources\bgloading1.jpg" />
+    <None Include="Resources\bearlaoding.gif" />
+    <None Include="Resources\bgloading.gif" />
+    <None Include="Resources\bgloading2.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\ezgif.com-gif-maker-removebg-preview1.png" />
+    <None Include="Resources\ezgif.com-gif-maker__1_-removebg-preview.png" />
+    <Content Include="sainticon.ico" />
+    <None Include="Resources\ic_action_logout.png" />
+    <None Include="Resources\ic_action_admin_panel_settings.png" />
+    <None Include="Resources\ic_action_fingerprint.png" />
+    <None Include="Resources\ic_action_person_add.png" />
+    <None Include="Resources\background-image-4735444.png" />
+    <None Include="Resources\bg FRAttendanceSystem.png" />
+    <None Include="Resources\login-removebg-.png" />
+    <None Include="Resources\NetCle_Technologies_Logo_2-1-removebg-preview.png" />
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
